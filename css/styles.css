@@ -1,0 +1,440 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;1,300;1,600&family=Montserrat:ital,wght@0,400;0,700;1,100;1,300&display=swap');
+
+/* GLOBALES */
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    font-size: 5rem;
+    font-weight: 200;
+    text-align: center;
+    padding: 5rem 5rem 4rem 5rem;
+}
+
+.separador {
+    height: 5rem;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 7rem;
+    background-color: #3f89c6;
+    text-align:center;
+}
+
+.navbar ul {
+    padding-top: 1.7rem;
+}
+
+.navbar-item {
+    display: inline-block;
+    top: 50%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.navbar-item a {
+    font-size:3rem;
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*          COMIENZO DE INDEX        */
+
+/* MAIN */
+.i-main {
+    display: block;
+    text-align: center;
+}
+
+.i-main img {
+    width: 90%;
+    height:45rem;
+    border-radius:5rem;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.i-main h1{
+    font-size: 10rem;
+    text-align: center;
+}
+
+.i-main p {
+    font-size: 3rem;
+    padding: 3rem;
+}
+
+
+/* SECTOR DE NOTICIAS */
+.noticias {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.noti-1 {
+    display: inline-block;
+    height: 400px;
+    width: 500px;
+    border-radius: 2rem;
+    margin: 0 1.5rem;
+}
+
+.noti-1 img {
+    display: inline-block;
+    height: 300px;
+    width: 500px;
+    border-radius: 2rem;
+
+}
+
+.noti-1 p {
+    text-align: justify;
+    font-size: 2rem;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+.noti-1 p:hover {
+    text-decoration: underline;
+}
+
+.noti-sec {
+    padding-bottom: 5rem;
+}
+
+.noti-2 {
+    display: inline-block;
+    height: 350px;
+    width: 600px;
+    border-radius: 2rem;
+    margin: 0 2.5rem;
+}
+
+.noti-2 video {
+    display: inline-block;
+    height: 350px;
+    width: 600px;
+    border-radius: 2rem;
+}
+
+.noti-2 p {
+    text-align: justify;
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+
+.noti-2 p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* GALERIA DE IMAGENES */
+.galeria {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.imgs img {
+    border-radius: 3rem;
+    height: 200px;
+    width: 200px;
+    padding: 1rem 2rem;
+}
+
+.galeria h2 {
+    color: white;
+}
+
+.galeria p {
+    color: white;
+}
+
+/* EVENTOS */
+
+.eventos {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.eventos p {
+    font-size: 2rem;
+    text-align: justify;
+    padding: 0 9rem;
+}
+
+.link{
+    display: inline;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.link a {
+    font-size: 2rem;
+}
+
+.i-tarjeta {
+    display: inline-block;
+    height: 500px;
+    width: 250px;
+    border-radius: 2rem;
+    background-color: #68a2d1;
+    margin: 0 1.5rem;
+}
+
+.i-tarjeta img {
+    display: inline-block;
+    height: 450px;
+    width: 250px;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.i-tarjeta p {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.img-eventos img {
+    border-radius: 3rem;
+    height: 500px;
+    width: 250px;
+    padding: 1rem 0rem;
+    margin: 0 2.2rem;
+    cursor: pointer;
+}
+
+/*  FIN DE INDEX  */
+
+
+
+/* COMIENZO DE PÁGINA EVENTOS */
+
+.tarjetas {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.tarjeta {
+    display: inline-block;
+    height: 600px;
+    width: 250px;
+    border-radius: 2rem;
+    background-color: #68a2d1;
+    margin: 0 1.5rem;
+}
+
+.tarjeta img {
+    display: inline-block;
+    height: 450px;
+    width: 250px;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.tarjeta p {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.calendar {
+    display: inline-block;
+}
+
+.fechas {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.fechas img {
+    height: 50rem;
+    width: 70rem;
+}
+
+.fecha, .p-fechas {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.fecha {
+    width: 50rem;
+    padding-top: 20rem;
+    text-align:start ;
+}
+
+
+.fecha p {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    
+}
+
+
+/* FIN DE PÁG EVENTOS */
+
+/* PAGINA DE IMAGENES */
+
+.g-img-princ {
+    text-align: center;
+    background-color: black ;
+}
+
+.g-img-princ h2 {
+    color: white;
+}
+
+.g-img-princ img {
+    width: 70%;
+    height: 55rem;
+    border-radius: 1rem;
+}
+
+.imgs {
+    text-align: center;
+    background-color: black;
+    margin-bottom: 5rem;
+}
+
+.imgs img {
+    cursor: pointer;
+}
+
+
+/* FIN PAGINA DE IMAGENES */
+
+/* INICIO PAG HISTORIA */
+
+.h-main {
+    display: inline-block;
+}
+
+.h-main p {
+    display: inline-block;
+    width: 700px;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 5rem;
+}
+
+
+.mapa {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+
+.mapa img {
+    height: 50rem;
+}
+
+.ubicacion {
+    text-align: center;
+}
+
+.ubicacion iframe {
+    border-radius: 1rem;
+    height: 50rem;
+    width: 60rem;
+    padding-bottom: 5rem;
+}
+
+
+
+/* FIN PAG HISTORIA */
+
+/* INICIO PAG NOTICIAS */
+
+.n-noti-princ {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+}
+
+.n-noti-1 {
+    display: inline-block;
+    height: 350px;
+    width: 600px;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.n-noti-1 video {
+    display: inline-block;
+    height: 350px;
+    width: 600px;
+    border-radius: 2rem;
+}
+
+.n-noti-1 p {
+    text-align: justify;
+    font-size: 2rem;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+.n-noti-2 {
+    display: inline-block;
+    height: 350px;
+    width: 600px;
+    border-radius: 1rem;
+}
+
+.n-noti-2 img {
+    display: inline-block;
+    height: 350px;
+    width: 600px;
+    border-radius: 1rem;
+}
+
+.n-noti-2 p {
+    text-align: justify;
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+
+
+
+/* FIN PAG NOTICIAS */
+
+/* FOOTER GLOBAL*/
+footer {
+    width: 100%;
+    height: 18rem;
+    background-color: black;
+    display: inline-block;
+}
+
+footer .logo {
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+/* FIN FOOTER */
