@@ -16,8 +16,8 @@ h2{
     padding: 5rem 5rem 4rem 5rem;
 }
 
-.separador {
-    height: 5rem;
+p a {
+    color: #3f89c6;
 }
 
 /* NAVBAR */
@@ -48,6 +48,11 @@ h2{
     cursor: pointer;
 }
 
+.navbar-item a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
 /*          COMIENZO DE INDEX        */
 
 /* MAIN */
@@ -74,8 +79,55 @@ h2{
     padding: 3rem;
 }
 
+.i-main a {
+    font-size: 3rem;
+}
 
-/* SECTOR DE NOTICIAS */
+/* SECTION NOTICIAS */
+.grid-noticias {  display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 200px 200px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "area-1 area-1 area-2 area-2"
+      "area-1 area-1 area-3 area-4";
+    gap: 10px 10px;
+    justify-content: center;
+}
+  
+.area-1 { 
+    grid-area: area-1; 
+    background: url(/images/noticia-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+.area-2 { 
+    grid-area: area-2; 
+    background: url(/images/Alta\ Gracia\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+.area-3 { 
+    grid-area: area-3; 
+    background: url(/images/Alta\ Gracia\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+.area-4 { 
+    grid-area: area-4; 
+    background: url(/images/noticia-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .noticias {
     display: inline-block;
     width: 100%;
@@ -141,7 +193,7 @@ h2{
 }
 
 
-/* GALERIA DE IMAGENES */
+/* SECTION GALERIA DE IMAGENES */
 .galeria {
     display: inline-block;
     width: 100%;
@@ -165,7 +217,7 @@ h2{
     color: white;
 }
 
-/* EVENTOS */
+/* SECTION EVENTOS */
 
 .eventos {
     display: inline-block;
@@ -195,8 +247,8 @@ h2{
     height: 500px;
     width: 250px;
     border-radius: 2rem;
-    background-color: #68a2d1;
-    margin: 0 1.5rem;
+    background-color: black;
+    margin: 3rem 1.5rem;
 }
 
 .i-tarjeta img {
@@ -208,6 +260,7 @@ h2{
 }
 
 .i-tarjeta p {
+    color: white;
     font-size: 2rem;
     text-align: center;
     padding: 1rem;
@@ -222,8 +275,12 @@ h2{
     cursor: pointer;
 }
 
-/*  FIN DE INDEX  */
+.link-eventos {
+    padding: 3rem 0;
+}
+/* FIN SECTOR EVENTOS */
 
+/*  FIN DE INDEX  */
 
 
 /* COMIENZO DE PÁGINA EVENTOS */
@@ -290,7 +347,6 @@ h2{
     
 }
 
-
 /* FIN DE PÁG EVENTOS */
 
 /* PAGINA DE IMAGENES */
@@ -298,6 +354,12 @@ h2{
 .g-img-princ {
     text-align: center;
     background-color: black ;
+}
+
+.g-img-princ p {
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 .g-img-princ h2 {
@@ -320,6 +382,20 @@ h2{
     cursor: pointer;
 }
 
+.arrow {
+    display: inline;
+    text-align: center;
+}
+
+.arrow img {
+    height: 3rem;
+    width: 5rem;
+}
+
+.arrow:hover {
+    background-color: #68a2d1;
+    transition: .5s;
+}
 
 /* FIN PAGINA DE IMAGENES */
 
@@ -327,6 +403,16 @@ h2{
 
 .h-main {
     display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.h-video {
+    padding: 3rem 0 0 0;
+}
+
+.h-video video {
+    border-radius: 1rem;
 }
 
 .h-main p {
@@ -360,8 +446,6 @@ h2{
     padding-bottom: 5rem;
 }
 
-
-
 /* FIN PAG HISTORIA */
 
 /* INICIO PAG NOTICIAS */
@@ -393,7 +477,6 @@ h2{
     text-align: justify;
     font-size: 2rem;
     padding: 0 2rem;
-    cursor: pointer;
 }
 
 .n-noti-2 {
@@ -416,6 +499,57 @@ h2{
     padding: 0 2rem;
 }
 
+.Otras-Noticias {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.n-noti-3 {
+    display: inline-block;
+    height: 350px;
+    width: 600px;
+}
+
+.n-noti-3 img{
+    display: inline-block;
+    height: 350px;
+    width: 600px;
+    border-radius: 2rem;
+}
+
+.n-noti-3-descrip {
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+    height: 350;
+}
+
+.n-noti-3-descrip p {
+    display: inline-block;
+    color: black;
+    font-size: 1.5rem;
+    vertical-align: auto;
+    padding: 10rem 1rem;
+    text-align: justify;
+}
+
+.n-noti-4 {
+    display: inline-block;
+    height: 350px;
+    width: 600px;
+}
+
+.n-noti-4 video{
+    display: inline-block;
+    height: 350px;
+    width: 600px;
+    border-radius: 2rem;
+}
+
+.otras-noti-3 {
+    padding-bottom: 5rem;
+}
 
 
 /* FIN PAG NOTICIAS */
