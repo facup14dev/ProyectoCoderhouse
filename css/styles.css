@@ -1021,6 +1021,10 @@ h2 {
     height: 40rem;
 }
 
+.h-main-img-mapa img {
+    width: 60%;
+}
+
 .ubicacion {
     text-align: center;
 }
