@@ -337,24 +337,36 @@ p a {
 .tarjeta {
     display: inline-block;
     height: 600px;
-    width: 250px;
+    width: 350px;
     border-radius: 2rem;
-    background-color: #68a2d1;
+    background-color: black;
     margin: 0 1.5rem;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.5s;
+    transition-property: box-shadow, transform;
+    cursor: pointer;
 }
 
 .tarjeta img {
     display: inline-block;
     height: 450px;
-    width: 250px;
+    width: 350px;
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
+}
+
+
+.tarjeta:hover, .tarjeta:focus, .tarjeta:active {
+    box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
 }
 
 .tarjeta p {
     font-size: 1.5rem;
     text-align: justify;
     padding: 1rem;
+    color: white;
 }
 
 .calendar {
