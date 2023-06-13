@@ -233,6 +233,7 @@ p a {
     text-align: center;
     background-color: black;
     border-radius: 1rem;
+    padding-bottom: 5rem;
 }
     
 .imgs img {
@@ -458,7 +459,7 @@ p a {
   
 .galeria-img-1 { 
     grid-area: galeria-img-1;
-    background: url(../ProyectoCoderhouse../images/img\ 1.jpeg); 
+    background: url(../images/img\ 1.jpeg); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
