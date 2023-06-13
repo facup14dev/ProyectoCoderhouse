@@ -16,8 +16,8 @@ h2{
     padding: 5rem 5rem 4rem 5rem;
 }
 
-.separador {
-    height: 5rem;
+p a {
+    color: #3f89c6;
 }
 
 /* NAVBAR */
@@ -48,124 +48,210 @@ h2{
     cursor: pointer;
 }
 
+.navbar-item a:hover {
+    text-decoration: underline;
+}
+
+
+
 /*          COMIENZO DE INDEX        */
 
 /* MAIN */
-.i-main {
-    display: block;
-    text-align: center;
-}
 
-.i-main img {
-    width: 90%;
-    height:45rem;
-    border-radius:5rem;
-    background-repeat:no-repeat;
+.i-main-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    background: url(../images/AltaGracia.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.i-main h1{
-    font-size: 10rem;
+.i-main-img h1{
+    color: #fff;
+    text-align: center;
+    font-size: 12rem;
+    padding: 2rem 3rem;
+    backdrop-filter: blur(2px); 
+    border-radius: 100px;
+}
+
+.i-main {
     text-align: center;
 }
+
 
 .i-main p {
     font-size: 3rem;
     padding: 3rem;
 }
 
+.i-main a {
+    font-size: 3rem;
+}
 
-/* SECTOR DE NOTICIAS */
-.noticias {
-    display: inline-block;
-    width: 100%;
+/* SECTION NOTICIAS */
+.grid-noticias {  display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 250px 250px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "area-1 area-1 area-2 area-2"
+      "area-1 area-1 area-3 area-4";
+    gap: 10px 10px;
+    justify-content: center;
+}
+  
+.area-1 { 
+    grid-area: area-1; 
+    background: url(../images/img\ 12.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+}
+
+.area-1:hover p{
+    text-decoration:overline;
+}
+
+.intro {
+    position: absolute;
+    font-size: 3.5rem;
+    top: 75%;
+    color: white;
+    padding: 10px;
+}
+
+.intro span {
+    font-size: 1.5rem;
+}
+
+.intro p {
+    font-size: 1.5rem;
+}
+
+.area-2 { 
+    grid-area: area-2; 
+    background: url(../images/Alta\ Gracia\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+}
+
+.area-2:hover p{
+    text-decoration:overline;
+}
+
+.area-2 .intro {
+    top: 60%;
+}
+
+.area-2 .intro h3 {
+    font-size: 1.7rem;
+}
+
+.area-2 .intro p {
+    font-size: 1.3rem;
+}
+  
+.area-3 { 
+    grid-area: area-3; 
+    background: url(../images/Alta\ Gracia\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+}
+
+.area-3  .intro {
+    top: 50%;
+}
+
+.area-3:hover p{
+    text-decoration:overline;
+}
+
+.area-3  .intro h3 {
+    font-size: 1.7rem;
+}
+
+.area-3  .intro p {
+    font-size: 1.3rem;
+}
+  
+.area-4 { 
+    grid-area: area-4; 
+    background: url(../images/noticia-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+}
+
+.area-4  .intro {
+    top: 45%;
+}
+
+.area-4:hover p{
+    text-decoration:overline;
+}
+
+.area-4  .intro h3 {
+    font-size: 1.7rem;
+}
+
+.area-4  .intro p {
+    font-size: 1.3rem;
+}
+
+
+.link-Noticias {
+    padding: 3rem;
     text-align: center;
-    padding: 5rem 0;
-}
-
-.noti-1 {
-    display: inline-block;
-    height: 400px;
-    width: 500px;
-    border-radius: 2rem;
-    margin: 0 1.5rem;
-}
-
-.noti-1 img {
-    display: inline-block;
-    height: 300px;
-    width: 500px;
-    border-radius: 2rem;
-
-}
-
-.noti-1 p {
-    text-align: justify;
-    font-size: 2rem;
-    padding: 0 2rem;
-    cursor: pointer;
-}
-
-.noti-1 p:hover {
-    text-decoration: underline;
-}
-
-.noti-sec {
-    padding-bottom: 5rem;
-}
-
-.noti-2 {
-    display: inline-block;
-    height: 350px;
-    width: 600px;
-    border-radius: 2rem;
-    margin: 0 2.5rem;
-}
-
-.noti-2 video {
-    display: inline-block;
-    height: 350px;
-    width: 600px;
-    border-radius: 2rem;
-}
-
-.noti-2 p {
-    text-align: justify;
-    font-size: 2rem;
-    padding: 0 2rem;
-}
-
-.noti-2 p:hover {
-    text-decoration: underline;
-    cursor: pointer;
 }
 
 
-/* GALERIA DE IMAGENES */
+/* SECTION GALERIA DE IMAGENES */
+.g-img-princ h1 {
+    color: white;
+    font-size: 5rem;
+    
+}
+
 .galeria {
     display: inline-block;
     width: 100%;
     text-align: center;
     background-color: black;
     border-radius: 1rem;
+    padding-bottom: 5rem;
 }
-
+    
 .imgs img {
     border-radius: 3rem;
     height: 200px;
     width: 200px;
     padding: 1rem 2rem;
 }
-
 .galeria h2 {
     color: white;
 }
-
 .galeria p {
     color: white;
 }
 
-/* EVENTOS */
+  
+
+/* SECTION EVENTOS */
 
 .eventos {
     display: inline-block;
@@ -195,8 +281,18 @@ h2{
     height: 500px;
     width: 250px;
     border-radius: 2rem;
-    background-color: #68a2d1;
-    margin: 0 1.5rem;
+    background-color: black;
+    margin: 3rem 1.5rem;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.5s;
+    transition-property: box-shadow, transform;
+    cursor: pointer;
+}
+
+.i-tarjeta:hover, .i-tarjeta:focus, .i-tarjeta:active {
+    box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
 }
 
 .i-tarjeta img {
@@ -208,6 +304,7 @@ h2{
 }
 
 .i-tarjeta p {
+    color: white;
     font-size: 2rem;
     text-align: center;
     padding: 1rem;
@@ -222,8 +319,12 @@ h2{
     cursor: pointer;
 }
 
-/*  FIN DE INDEX  */
+.link-eventos {
+    padding: 3rem 0;
+}
+/* FIN SECTOR EVENTOS */
 
+/*  FIN DE INDEX  */
 
 
 /* COMIENZO DE PÁGINA EVENTOS */
@@ -237,24 +338,36 @@ h2{
 .tarjeta {
     display: inline-block;
     height: 600px;
-    width: 250px;
+    width: 350px;
     border-radius: 2rem;
-    background-color: #68a2d1;
+    background-color: black;
     margin: 0 1.5rem;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.5s;
+    transition-property: box-shadow, transform;
+    cursor: pointer;
 }
 
 .tarjeta img {
     display: inline-block;
     height: 450px;
-    width: 250px;
+    width: 350px;
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
+}
+
+
+.tarjeta:hover, .tarjeta:focus, .tarjeta:active {
+    box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
 }
 
 .tarjeta p {
     font-size: 1.5rem;
     text-align: justify;
     padding: 1rem;
+    color: white;
 }
 
 .calendar {
@@ -290,14 +403,25 @@ h2{
     
 }
 
-
 /* FIN DE PÁG EVENTOS */
 
-/* PAGINA DE IMAGENES */
+/* PAGINA DE GALERIA */
 
 .g-img-princ {
     text-align: center;
     background-color: black ;
+}
+
+.g-img-princ p {
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.g-img-princ h1 {
+    color: white;
+    font-weight: normal;
+    padding: 5rem;
 }
 
 .g-img-princ h2 {
@@ -310,16 +434,124 @@ h2{
     border-radius: 1rem;
 }
 
-.imgs {
-    text-align: center;
+
+.container__noti {  display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "galeria-img-1 galeria-img-1 galeria-img-2 galeria-img-2 galeria-img-3"
+      "galeria-img-1 galeria-img-1 galeria-img-5 galeria-img-4 galeria-img-4"
+      "galeria-img-6 galeria-img-6 galeria-img-6 galeria-img-12 galeria-img-12"
+      "galeria-img-7 galeria-img-9 galeria-img-10 galeria-img-12 galeria-img-12"
+      "galeria-img-8 galeria-img-9 galeria-img-11 galeria-img-12 galeria-img-12";
+    width: 100%;
+    height: 1300px;
+    padding-bottom: 50px;
     background-color: black;
-    margin-bottom: 5rem;
+  }
+
+.container__noti h1 {
+    color: black;
+
+}
+  
+.galeria-img-1 { 
+    grid-area: galeria-img-1;
+    background: url(../images/img\ 1.jpeg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.imgs img {
-    cursor: pointer;
+.galeria-img-2 { 
+    grid-area: galeria-img-2; 
+    background: url(../images/img\ 2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+.galeria-img-3 { 
+    grid-area: galeria-img-3; 
+    background: url(../images/img\ 3.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.galeria-img-4 { 
+    grid-area: galeria-img-4; 
+    background: url(../images/img\ 4.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.galeria-img-5 { 
+    grid-area: galeria-img-5; 
+    background: url(../images/img\ 6.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.galeria-img-6 { 
+    grid-area: galeria-img-6; 
+    background: url(../images/img\ 5.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.galeria-img-7 { 
+    grid-area: galeria-img-7; 
+    background: url(../images/img\ 7.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.galeria-img-8 { 
+    grid-area: galeria-img-8; 
+    background: url(../images/img\ 8.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.galeria-img-9 { 
+    grid-area: galeria-img-9; 
+    background: url(../images/img\ 12.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.galeria-img-10 { 
+    grid-area: galeria-img-10; 
+    background: url(../images/img\ 10.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.galeria-img-11 { 
+    grid-area: galeria-img-11; 
+    background: url(../images/img\ 11.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.galeria-img-12 { 
+    grid-area: galeria-img-12; 
+    background: url(../images/img\ 9.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 /* FIN PAGINA DE IMAGENES */
 
@@ -327,16 +559,39 @@ h2{
 
 .h-main {
     display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.h-video {
+    padding: 3rem 0 0 0;
+}
+
+.h-video video {
+    border-radius: 1rem;
+    width: 60%;
 }
 
 .h-main p {
     display: inline-block;
-    width: 700px;
-    font-size: 1.5rem;
+    width: 62%;
+    font-size: 2rem;
     text-align: justify;
     padding: 5rem;
 }
 
+.h-main-img img{
+    display: inline-block;
+    width: 62%;
+    height: 500px;
+    border-radius: .5rem;
+}
+
+.h-main-img p {
+    display: inline-block;
+    color: grey;
+    padding: 0;
+}
 
 .mapa {
     display: inline-block;
@@ -359,8 +614,6 @@ h2{
     width: 60rem;
     padding-bottom: 5rem;
 }
-
-
 
 /* FIN PAG HISTORIA */
 
@@ -393,7 +646,6 @@ h2{
     text-align: justify;
     font-size: 2rem;
     padding: 0 2rem;
-    cursor: pointer;
 }
 
 .n-noti-2 {
@@ -416,6 +668,57 @@ h2{
     padding: 0 2rem;
 }
 
+.Otras-Noticias {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.n-noti-3 {
+    display: inline-block;
+    height: 350px;
+    width: 600px;
+}
+
+.n-noti-3 img{
+    display: inline-block;
+    height: 350px;
+    width: 600px;
+    border-radius: 2rem;
+}
+
+.n-noti-3-descrip {
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+    height: 350;
+}
+
+.n-noti-3-descrip p {
+    display: inline-block;
+    color: black;
+    font-size: 1.5rem;
+    vertical-align: auto;
+    padding: 10rem 1rem;
+    text-align: justify;
+}
+
+.n-noti-4 {
+    display: inline-block;
+    height: 350px;
+    width: 600px;
+}
+
+.n-noti-4 video{
+    display: inline-block;
+    height: 350px;
+    width: 600px;
+    border-radius: 2rem;
+}
+
+.otras-noti-3 {
+    padding-bottom: 5rem;
+}
 
 
 /* FIN PAG NOTICIAS */
@@ -438,3 +741,952 @@ footer p {
     text-align: center;
 }
 /* FIN FOOTER */
+
+/* CELULAR */
+@media (min-width: 0px) and (max-width: 500px) {
+
+    /* NAVBAR CELULAR */
+    .navbar {
+        height: 4rem;
+    }
+    
+    .navbar ul {
+        padding-top: 1.3rem;
+    }
+    
+    .navbar-item {
+        display: inline-block;
+        top: 50%;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    .navbar-item a {
+        font-size: 1rem;
+        padding: 1rem 1rem;
+    }
+
+/* PAG INDEX */
+
+h2 {
+    font-size: 3rem;
+}
+
+.i-main-img {
+    height: 300px;
+}
+
+.i-main-img h1{
+    font-size: 7rem;
+}
+
+.i-main p {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.i-main a {
+    font-size: 1.5rem;
+}
+
+/* SECTION NOTICIAS CELULAR*/
+.grid-noticias {
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 100px 100px;
+    gap: 5px 5px;
+}
+  
+
+.intro {
+    position: absolute;
+    font-size: 3.5rem;
+    top: 55%;
+    color: white;
+    padding: 10px;
+}
+
+.intro span {
+    font-size: 1rem;
+}
+
+.intro h3 {
+    font-size: 1.5rem;
+}
+
+.intro p {
+    display: none;
+}
+
+.area-2 .intro {
+    top: 30%;
+}
+
+.area-2 .intro h3 {
+    font-size: 1.2rem;
+}
+
+.area-2 .intro p {
+    display: none;
+}
+  
+
+.area-3  .intro {
+    top: 10%;
+}
+
+.area-3  .intro h3 {
+    font-size: 1rem;
+}
+
+.area-3  .intro p {
+    display: none;
+}
+  
+.area-4  .intro {
+    top: 10%;
+}
+
+
+.area-4  .intro h3 {
+    font-size: 1rem;
+}
+
+.area-4  .intro p {
+    display: none;
+}
+
+
+.link-Noticias {
+    padding: 2rem;
+}
+
+
+/* SECTION GALERIA DE IMAGENES */
+
+.galeria {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    border-radius: 1rem;
+}
+    
+.imgs img {
+    border-radius: 3rem;
+    height: 150px;
+    width: 150px;
+    padding: 1rem 2rem;
+}
+
+.galeria p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.galeria p a {
+    font-size: 1.5rem;
+}
+
+  
+
+/* SECTION EVENTOS */
+
+.eventos p {
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 0 9rem;
+}
+
+
+.i-tarjeta {
+    display: inline-block;
+    height: 300px;
+    width: 250px;
+    border-radius: 2rem;
+    background-color: black;
+    margin: 3rem 1.5rem;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.5s;
+    transition-property: box-shadow, transform;
+    cursor: pointer;
+}
+
+
+.i-tarjeta img {
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.i-tarjeta p {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.img-eventos img {
+    border-radius: 3rem;
+    height: 300px;
+    width: 250px;
+    padding: 1rem 0rem;
+    margin: 0 2.2rem;
+    cursor: pointer;
+}
+
+
+.link a {
+    font-size: 2rem;
+}
+
+.link-eventos p{
+    font-size: 2rem;
+}
+
+/* FIN SECTOR EVENTOS */
+
+/*  FIN DE INDEX  */
+
+
+/* PAG GALERIA CELULAR */
+    .g-img-princ img {
+        width: 100%;
+        height: 25rem;
+        border-radius: 1rem;
+    }
+
+    .g-img-princ h1 {
+        font-size: 5rem;
+        font-weight: normal;
+    }
+
+    .g-img-princ h2 {
+        font-size: 3rem;
+    }
+
+    .container__noti { 
+        height: 600px;
+        background-color: black;
+        padding-bottom: 3rem;
+      }
+
+/* PAG HISTORIA CELULAR */
+
+.h-video {
+    padding: 2rem;
+}
+
+.h-video video {
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.h-main h2 {
+    font-size: 3.5rem;
+}
+
+.h-main p {
+    display: inline-block;
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 2rem;
+}
+
+.h-main-img img{
+    display: inline-block;
+    width: 80%;
+    height: 300px;
+    border-radius: .5rem;
+}
+
+.h-main-img p {
+    display: inline-block;
+    color: grey;
+    padding: 0;
+}
+
+
+.mapa {
+    display: inline-block;
+    width: 90%;
+    height: 400px;
+    text-align: center;
+}
+
+.mapa img {
+    height: 40rem;
+}
+
+.h-main-img-mapa img {
+    width: 60%;
+}
+
+.ubicacion {
+    text-align: center;
+}
+
+.ubicacion iframe {
+    border-radius: 1rem;
+    height: 40rem;
+    width: 90%;
+    padding-bottom: 5rem;
+}
+
+/* INICIO PAG NOTICIAS */
+
+.n-noti-princ {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.n-noti-1 {
+    display: inline-block;
+    height: 300px;
+    width: 90%;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.n-noti-1 video {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.n-noti-1 p {
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}
+
+.n-noti-2 {
+    display: inline-block;
+    height: 350px;
+    width: 100%;
+    padding: 5rem 0;
+    border-radius: 1rem;
+}
+
+.n-noti-2 img {
+    display: inline-block;
+    height: 250px;
+    width: 90%;
+    border-radius: 1rem;
+}
+
+.n-noti-2 p {
+    text-align: justify;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}
+
+.Otras-Noticias {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.n-noti-3 {
+    display: inline-block;
+    height: 250px;
+    width: 100%;
+}
+
+.n-noti-3 img{
+    display: inline-block;
+    height: 250px;
+    width: 90%;
+    border-radius: 1rem;
+}
+
+.n-noti-3-descrip {
+    display: inline-block;
+    vertical-align: top;
+    width: 90%;
+    height: 350;
+}
+
+.n-noti-3-descrip p {
+    display: inline-block;
+    color: black;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+.n-noti-4 {
+    display: inline-block;
+    height: 250px;
+    width: 100%;
+    padding-top: 5rem;
+}
+
+.n-noti-4 video{
+    display: inline-block;
+    height: 250px;
+    width: 90%;
+    border-radius: 1rem;
+}
+
+.otras-noti-3 {
+    padding: 5rem 0;
+}
+
+/* PAG EVENTOS TABLET */
+.tarjeta {
+    display: inline-block;
+    height: 400px;
+    width: 350px;
+    border-radius: 2rem;
+    background-color: #68a2d1;
+    margin: 1rem 1.5rem;
+}
+
+.tarjeta img {
+    display: inline-block;
+    height: 275px;
+    width: 350px;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.tarjeta p {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.calendar {
+    display: inline-block;
+}
+
+.fechas {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.fechas img {
+    height: 50rem;
+    width: 100%;
+}
+
+
+.fecha {
+    width: 80%;
+    padding: 1rem ;
+}
+
+.fecha p {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    
+}
+
+
+/* FOOTER CELULAR */
+    footer {
+        width: 100%;
+        height: 9rem;
+        background-color: black;
+        display: inline-block;
+    }
+    
+    footer .logo {
+        text-align: center;
+    }
+
+    footer img {
+        height: 65px;
+        width: 200px;
+    }
+    
+    footer p {
+        color: white;
+        font-size: .7rem;
+        text-align: center;
+    }
+
+    
+}
+
+/* TABLET */
+@media  (min-width: 501px) and (max-width: 768px) {
+/* NAVBAR TABLET */
+    .navbar {
+        height: 6rem;
+    }
+    
+    .navbar ul {
+        padding-top: 2rem;
+    }
+    
+    .navbar-item {
+        display: inline-block;
+        top: 50%;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    .navbar-item a {
+        font-size: 1.7rem;
+        padding: 1rem 1rem;
+    }
+
+/* PAG INDEX */
+
+h2 {
+    font-size: 4rem;
+}
+
+.i-main-img {
+    height: 400px;
+    width: 100%;
+}
+
+.i-main-img h1{
+    font-size: 9rem;
+}
+
+.i-main p {
+    font-size: 1.7rem;
+}
+
+.i-main p a {
+    font-size: 1.7rem;
+}
+
+
+/* SECTION NOTICIAS CELULAR*/
+.grid-noticias {
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 150px 150px;
+    gap: 7px 7px;
+}
+  
+
+.intro {
+    top: 70%;
+}
+
+.intro span {
+    font-size: 1rem;
+}
+
+.intro h3 {
+    font-size: 1.5rem;
+}
+
+.intro p {
+    display: none;
+}
+
+.area-2 .intro {
+    top: 54%;
+}
+
+.area-2 .intro h3 {
+    font-size: 1.2rem;
+}
+
+.area-2 .intro p {
+    display: none;
+}
+  
+
+.area-3  .intro {
+    top: 45%;
+}
+
+.area-3  .intro h3 {
+    font-size: 1rem;
+}
+
+.area-3  .intro p {
+    display: none;
+}
+  
+.area-4  .intro {
+    top: 45%;
+}
+
+
+.area-4  .intro h3 {
+    font-size: 1rem;
+}
+
+.area-4  .intro p {
+    display: none;
+}
+
+
+.link-Noticias {
+    padding: 2rem;
+}
+
+
+/* SECTION GALERIA DE IMAGENES */
+
+.galeria {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    border-radius: 1rem;
+}
+    
+.imgs img {
+    border-radius: 3rem;
+    height: 200px;
+    width: 200px;
+    padding: 1rem 2rem;
+}
+
+.galeria p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.galeria p a {
+    font-size: 1.5rem;
+}
+
+  
+
+/* SECTION EVENTOS */
+
+.eventos p {
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 0 9rem;
+}
+
+
+.i-tarjeta {
+    display: inline-block;
+    height: 300px;
+    width: 250px;
+    border-radius: 2rem;
+    background-color: black;
+    margin: 3rem 1.5rem;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.5s;
+    transition-property: box-shadow, transform;
+    cursor: pointer;
+}
+
+
+.i-tarjeta img {
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.i-tarjeta p {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.img-eventos img {
+    border-radius: 3rem;
+    height: 300px;
+    width: 250px;
+    padding: 1rem 0rem;
+    margin: 0 2.2rem;
+    cursor: pointer;
+}
+
+
+.link a {
+    font-size: 2rem;
+}
+
+.link-eventos p{
+    font-size: 2rem;
+}
+
+/* FIN SECTOR EVENTOS */
+
+/*  FIN DE INDEX  */
+
+/* PAG GALERIA TABLET */
+    .g-img-princ img {
+        width: 85%;
+        height: 35rem;
+        border-radius: 1rem;
+    }
+
+    .g-img-princ h1 {
+        font-size: 5rem;
+        font-weight: normal;
+    }
+
+    .g-img-princ h2 {
+        font-size: 3rem;
+    }
+
+    .container__noti { 
+        height: 900px;
+        background-color: black;
+        padding-bottom: 2.5rem;
+      }
+
+/* PAG HISTORIA TABLET */
+
+.h-video {
+    padding: 2rem;
+}
+
+.h-video video {
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.h-main h2 {
+    font-size: 4.5rem;
+}
+
+.h-main p {
+    display: inline-block;
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 2rem;
+}
+
+.h-main-img img{
+    display: inline-block;
+    width: 80%;
+    height: 300px;
+    border-radius: .5rem;
+}
+
+.h-main-img p {
+    display: inline-block;
+    color: grey;
+    padding: 0;
+}
+
+
+.mapa {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+.mapa img {
+    height: 40rem;
+}
+
+.ubicacion {
+    text-align: center;
+}
+
+.ubicacion iframe {
+    border-radius: 1rem;
+    height: 50rem;
+    width: 80%;
+    padding-bottom: 5rem;
+}
+
+
+/* INICIO PAG NOTICIAS */
+
+.n-noti-princ {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.n-noti-1 {
+    display: inline-block;
+    height: 350px;
+    width: 90%;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.n-noti-1 video {
+    display: inline-block;
+    height: 350px;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.n-noti-1 p {
+    text-align: justify;
+    font-size: 2rem;
+    padding: 0 2rem;
+    width: 90%;
+}
+
+.n-noti-2 {
+    display: inline-block;
+    height: 350px;
+    width: 90%;
+    padding: 5rem 0;
+    border-radius: 1rem;
+}
+
+.n-noti-2 img {
+    display: inline-block;
+    height: 350px;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.n-noti-2 p {
+    text-align: justify;
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+
+.Otras-Noticias {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.n-noti-3 {
+    display: inline-block;
+    height: 350px;
+    width: 90%;
+}
+
+.n-noti-3 img{
+    display: inline-block;
+    height: 350px;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.n-noti-3-descrip {
+    display: inline-block;
+    vertical-align: top;
+    width: 90%;
+    height: 350;
+}
+
+.n-noti-3-descrip p {
+    display: inline-block;
+    color: black;
+    font-size: 1.5rem;
+    padding: 0;
+    width: 100%;
+}
+
+.n-noti-4 {
+    display: inline-block;
+    height: 350px;
+    width: 90%;
+    padding-top: 5rem;
+}
+
+.n-noti-4 video{
+    display: inline-block;
+    height: 350px;
+    width: 100%;
+    border-radius: 1rem;
+    padding-top: 5rem;
+}
+
+.otras-noti-3 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* PAG EVENTOS TABLET */
+.tarjeta {
+    display: inline-block;
+    height: 600px;
+    width: 250px;
+    border-radius: 2rem;
+    background-color: #68a2d1;
+    margin: 1rem 1.5rem;
+}
+
+.tarjeta img {
+    display: inline-block;
+    height: 450px;
+    width: 250px;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.tarjeta p {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.calendar {
+    display: inline-block;
+}
+
+.fechas {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.fechas img {
+    height: 50rem;
+    width: 100%;
+}
+
+.fecha, .p-fechas {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.fecha {
+    width: 80%;
+    padding: 1rem ;
+}
+
+
+.fecha p {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    
+}
+
+/* FOOTER TABLET */
+    footer {
+        width: 100%;
+        height: 12rem;
+        background-color: black;
+        display: inline-block;
+    }
+    
+    footer .logo {
+        text-align: center;
+    }
+
+    footer img {
+        height: 75px;
+        width: 200px;
+    }
+    
+    footer p {
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+}
