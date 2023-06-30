@@ -418,7 +418,7 @@ p a {
 
 .galeria-img-1 {
   grid-area: galeria-img-1;
-  background: url(/images/img\ 1.jpeg);
+  background: url(../images/img\ 1.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -426,7 +426,7 @@ p a {
 
 .galeria-img-2 {
   grid-area: galeria-img-2;
-  background: url(/images/img\ 2.jpeg);
+  background: url(../images/img\ 2.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -434,7 +434,7 @@ p a {
 
 .galeria-img-3 {
   grid-area: galeria-img-3;
-  background: url(/images/img\ 3.jpeg);
+  background: url(../images/img\ 3.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -442,7 +442,7 @@ p a {
 
 .galeria-img-4 {
   grid-area: galeria-img-4;
-  background: url(/images/img\ 4.jpeg);
+  background: url(../images/img\ 4.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -450,7 +450,7 @@ p a {
 
 .galeria-img-5 {
   grid-area: galeria-img-5;
-  background: url(/images/img\ 6.jpeg);
+  background: url(../images/img\ 6.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -458,7 +458,7 @@ p a {
 
 .galeria-img-6 {
   grid-area: galeria-img-6;
-  background: url(/images/img\ 5.jpeg);
+  background: url(../images/img\ 5.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -466,7 +466,7 @@ p a {
 
 .galeria-img-7 {
   grid-area: galeria-img-7;
-  background: url(/images/img\ 7.jpeg);
+  background: url(../images/img\ 7.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -474,7 +474,7 @@ p a {
 
 .galeria-img-8 {
   grid-area: galeria-img-8;
-  background: url(/images/img\ 8.jpeg);
+  background: url(../images/img\ 8.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -482,7 +482,7 @@ p a {
 
 .galeria-img-9 {
   grid-area: galeria-img-9;
-  background: url(/images/img\ 12.jpeg);
+  background: url(../images/img\ 12.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -490,7 +490,7 @@ p a {
 
 .galeria-img-10 {
   grid-area: galeria-img-10;
-  background: url(/images/img\ 10.jpeg);
+  background: url(../images/img\ 10.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -498,7 +498,7 @@ p a {
 
 .galeria-img-11 {
   grid-area: galeria-img-11;
-  background: url(/images/img\ 11.jpeg);
+  background: url(../images/img\ 11.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -506,7 +506,7 @@ p a {
 
 .galeria-img-12 {
   grid-area: galeria-img-12;
-  background: url(/images/img\ 9.jpeg);
+  background: url(../images/img\ 9.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
