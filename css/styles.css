@@ -48,6 +48,15 @@ p a {
 
 /* COMIENZO DE INDEX */
 /* MAIN */
+.i-main-img h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 12rem;
+  padding: 2rem 3rem;
+  backdrop-filter: blur(2px);
+  border-radius: 100px;
+}
+
 .i-main-img {
   display: flex;
   align-items: center;
@@ -58,15 +67,6 @@ p a {
   background-repeat: no-repeat;
   background-position: center;
 }
-.i-main-img h1 {
-  color: #fff;
-  text-align: center;
-  font-size: 12rem;
-  padding: 2rem 3rem;
-  backdrop-filter: blur(2px);
-  border-radius: 100px;
-}
-
 .i-main {
   text-align: center;
 }
@@ -127,7 +127,13 @@ p a {
   text-decoration: overline;
 }
 .grid-noticias .area-2 .intro {
-  top: 60%;
+  position: absolute;
+  top: 75%;
+  padding: 1rem;
+  color: white;
+}
+.grid-noticias .area-2 .intro span {
+  font-size: 1rem;
 }
 .grid-noticias .area-2 .intro h3 {
   font-size: 1.7rem;
@@ -145,7 +151,13 @@ p a {
   position: relative;
 }
 .grid-noticias .area-3 .intro {
-  top: 50%;
+  position: absolute;
+  top: 70%;
+  padding: 1rem;
+  color: white;
+}
+.grid-noticias .area-3 .intro span {
+  font-size: 1rem;
 }
 .grid-noticias .area-3 .intro h3 {
   font-size: 1.7rem;
@@ -166,7 +178,13 @@ p a {
   position: relative;
 }
 .grid-noticias .area-4 .intro {
-  top: 45%;
+  position: absolute;
+  color: white;
+  top: 70%;
+  padding: 1rem;
+}
+.grid-noticias .area-4 .intro span {
+  font-size: 1rem;
 }
 .grid-noticias .area-4 .intro h3 {
   font-size: 1.7rem;
@@ -181,6 +199,12 @@ p a {
 .link-Noticias {
   padding: 3rem;
   text-align: center;
+}
+.link-Noticias p {
+  font-size: 2rem;
+}
+.link-Noticias p a {
+  font-size: 2rem;
 }
 
 /* SECTION GALERIA DE IMAGENES */
@@ -208,6 +232,10 @@ p a {
 }
 .galeria p {
   color: white;
+  font-size: 2rem;
+}
+.galeria p a {
+  font-size: 2rem;
 }
 
 /* SECTION EVENTOS */
@@ -693,8 +721,8 @@ footer p {
   }
   .intro {
     position: absolute;
-    font-size: 3.5rem;
-    top: 55%;
+    font-size: 1rem;
+    top: 15%;
     color: white;
     padding: 10px;
   }
@@ -708,7 +736,7 @@ footer p {
     display: none;
   }
   .area-2 .intro {
-    top: 30%;
+    top: 10%;
   }
   .area-2 .intro h3 {
     font-size: 1.2rem;
