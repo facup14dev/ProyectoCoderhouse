@@ -114,7 +114,8 @@ p a {
 .grid-noticias .area-1 .intro p {
   font-size: 1.5rem;
 }
-.grid-noticias .area-2 {
+
+.area-2 {
   grid-area: area-2;
   background: url(../images/Alta\ Gracia\ 2.jpg);
   background-size: cover;
@@ -123,25 +124,26 @@ p a {
   cursor: pointer;
   position: relative;
 }
-.grid-noticias .area-2:hover p {
+.area-2:hover p {
   text-decoration: overline;
 }
-.grid-noticias .area-2 .intro {
+.area-2 .intro {
   position: absolute;
   top: 75%;
   padding: 1rem;
   color: white;
 }
-.grid-noticias .area-2 .intro span {
+.area-2 .intro span {
   font-size: 1rem;
 }
-.grid-noticias .area-2 .intro h3 {
+.area-2 .intro h3 {
   font-size: 1.7rem;
 }
-.grid-noticias .area-2 .intro p {
+.area-2 .intro p {
   font-size: 1.3rem;
 }
-.grid-noticias .area-3 {
+
+.area-3 {
   grid-area: area-3;
   background: url(../images/Alta\ Gracia\ 1.jpg);
   background-size: cover;
@@ -150,25 +152,26 @@ p a {
   cursor: pointer;
   position: relative;
 }
-.grid-noticias .area-3 .intro {
+.area-3 .intro {
   position: absolute;
   top: 70%;
   padding: 1rem;
   color: white;
 }
-.grid-noticias .area-3 .intro span {
+.area-3 .intro span {
   font-size: 1rem;
 }
-.grid-noticias .area-3 .intro h3 {
+.area-3 .intro h3 {
   font-size: 1.7rem;
 }
-.grid-noticias .area-3 .intro p {
+.area-3 .intro p {
   font-size: 1.3rem;
 }
-.grid-noticias .area-3:hover p {
+.area-3:hover p {
   text-decoration: overline;
 }
-.grid-noticias .area-4 {
+
+.area-4 {
   grid-area: area-4;
   background: url(../images/noticia-1.png);
   background-size: cover;
@@ -177,22 +180,22 @@ p a {
   cursor: pointer;
   position: relative;
 }
-.grid-noticias .area-4 .intro {
+.area-4 .intro {
   position: absolute;
   color: white;
   top: 70%;
   padding: 1rem;
 }
-.grid-noticias .area-4 .intro span {
+.area-4 .intro span {
   font-size: 1rem;
 }
-.grid-noticias .area-4 .intro h3 {
+.area-4 .intro h3 {
   font-size: 1.7rem;
 }
-.grid-noticias .area-4 .intro p {
+.area-4 .intro p {
   font-size: 1.3rem;
 }
-.grid-noticias .area-4:hover p {
+.area-4:hover p {
   text-decoration: overline;
 }
 
@@ -418,7 +421,7 @@ p a {
 
 .galeria-img-1 {
   grid-area: galeria-img-1;
-  background: url(../images/img\ 1.jpeg);
+  background: url(/images/img\ 1.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -426,7 +429,7 @@ p a {
 
 .galeria-img-2 {
   grid-area: galeria-img-2;
-  background: url(../images/img\ 2.jpeg);
+  background: url(/images/img\ 2.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -434,7 +437,7 @@ p a {
 
 .galeria-img-3 {
   grid-area: galeria-img-3;
-  background: url(../images/img\ 3.jpeg);
+  background: url(/images/img\ 3.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -442,7 +445,7 @@ p a {
 
 .galeria-img-4 {
   grid-area: galeria-img-4;
-  background: url(../images/img\ 4.jpeg);
+  background: url(/images/img\ 4.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -450,7 +453,7 @@ p a {
 
 .galeria-img-5 {
   grid-area: galeria-img-5;
-  background: url(../images/img\ 6.jpeg);
+  background: url(/images/img\ 6.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -458,7 +461,7 @@ p a {
 
 .galeria-img-6 {
   grid-area: galeria-img-6;
-  background: url(../images/img\ 5.jpeg);
+  background: url(/images/img\ 5.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -466,7 +469,7 @@ p a {
 
 .galeria-img-7 {
   grid-area: galeria-img-7;
-  background: url(../images/img\ 7.jpeg);
+  background: url(/images/img\ 7.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -474,7 +477,7 @@ p a {
 
 .galeria-img-8 {
   grid-area: galeria-img-8;
-  background: url(../images/img\ 8.jpeg);
+  background: url(/images/img\ 8.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -482,7 +485,7 @@ p a {
 
 .galeria-img-9 {
   grid-area: galeria-img-9;
-  background: url(../images/img\ 12.jpeg);
+  background: url(/images/img\ 12.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -490,7 +493,7 @@ p a {
 
 .galeria-img-10 {
   grid-area: galeria-img-10;
-  background: url(../images/img\ 10.jpeg);
+  background: url(/images/img\ 10.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -498,7 +501,7 @@ p a {
 
 .galeria-img-11 {
   grid-area: galeria-img-11;
-  background: url(../images/img\ 11.jpeg);
+  background: url(/images/img\ 11.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -506,7 +509,7 @@ p a {
 
 .galeria-img-12 {
   grid-area: galeria-img-12;
-  background: url(../images/img\ 9.jpeg);
+  background: url(/images/img\ 9.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
